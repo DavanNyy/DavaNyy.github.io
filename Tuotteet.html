@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SKIN&SHADE</title>
+    <link href="Verkko.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+<!-- NAVIGATION BAR -->
+<div class="navbar">
+    <div class="logo-nav">
+        <img src="logo.png" class="logo" alt="Logo">
+    </div>
+
+<!-- Search -->
+ <div class="search-container">
+    <div class="search-box">
+        <input type="search" placeholder="Hae tuote..." class="search">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+</div>
+
+
+<div class="nav-links">
+        <a href="index.html">Koti</a>
+        <a href="Tuotteet.html">Tuotteet</a>
+        <a href="Tietoa meistä.html">Tietoa meistä</a>
+</div>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+    <h1>SKIN&SHADE</h1>
+</header>
+
+<section id="tuotteet">
+  
+  <div class="new-p-heading">
+    <h3>Tuotteet</h3>
+
+    <ul>
+      <li class="active">Kaikki</li>
+    </ul>
+
+  </div>
+
+<div class="new-product-box">
+
+  <!--Tuotteen box-->
+  <div class="new-product">
+    <a href="#" class="new-product-img">
+      <img src="tuote(Anua).jpg" alt="">
+    </a>
+    <!--Tuotteen teksti-->
+    <div class="new-product-text">
+      <a>Anua Heartleaf 77 Soothing Toner</a>
+      <span>Pros</span>
+      <p>Hydrating, Gentle</p>
+      <span>Cons</span>
+      <p>-</p>
+    </div>
+  </div>
+
+
+  <div class="new-product">
+    <a href="#" class="new-product-img">
+      <img src="tuote(Purito).jpg" alt="">
+    </a>
+    <!--Tuotteen teksti-->
+    <div class="new-product-text">
+      <a>Purito SEOUL Wonder Releaf Centella Serum</a>
+      <span>Pros</span>
+      <p>Soothing, Lightweight</p>
+      <span>Cons</span>
+      <p>Scents</p>
+    </div>
+  </div>
+
+
+  <div class="new-product">
+    <a href="#" class="new-product-img">
+      <img src="tuote(Numbuzin cream).jpg" alt="">
+    </a>
+    <!--Tuotteen teksti-->
+    <div class="new-product-text">
+      <a>numbuzin No.1 Pantothenic B5 Active Soothing Cream</a>
+      <span>Pros</span>
+      <p>Moisturizing, Lightweight</p>
+      <span>Cons</span>
+      <p>-</p>
+    </div>
+  </div>
+
+
+<div class="new-product">
+    <a href="#" class="new-product-img">
+      <img src="tuote(Numbuzin toner).jpg" alt="">
+    </a>
+    <!--Tuotteen teksti-->
+    <div class="new-product-text">
+      <a>numbuzin No. 3 Super Glowing Essence Toner</a>
+      <span>Pros</span>
+      <p>Brightening</p>
+      <span>Cons</span>
+      <p>Scents, might irritate sensitive skin</p>
+    </div>
+  </div>
+
+</section>
+
+<!--==Jquery==-->
+<script src="jquery-3.6.1.js"></script>
+<!--==Script==-->
+<script>
+  var selection = ".new-p-heading li";
+  $(selector).on("click",function(){
+    $(selector).removeClass("active")
+    $(this).addClass("active")
+
+})
+
+</script>

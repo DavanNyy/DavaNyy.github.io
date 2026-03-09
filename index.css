@@ -1,0 +1,273 @@
+/* Yleiset asetukset */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 249);
+    color: rgb(9, 9, 9);
+    font-family: "Albert Sans", sans-serif;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFDF5;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* mobiilille */
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    background-color: #f382c4;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Logo */
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* SEARCH */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+.search-box {
+  position: relative; /* Tämä tarvitaan, jotta ikoni voi olla inputin päällä */
+  display: inline-block;
+}
+.search {
+    width: 300px;
+    max-width: 90%;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.search-icon {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.search-box:hover .search-icon {
+  color: #333;          
+  transform: translateY(-50%) scale(1.2); 
+}
+
+/* HEADER */
+header h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+/* OTSIKOT */
+h2, h3 {
+    text-align: center;
+}
+
+/* CONTENT */
+.description-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+/* KUVA */
+img {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    height: auto;
+}
+#main {
+    max-width: 1200px;
+    width: 90%;
+    padding: 50px;
+    border-radius: 30px;
+    min-height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+/* Tuotteet */
+#tuotteet{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+.new-p-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.new-p-heading h3{
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: 800;
+}
+.new-p-heading ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.new-p-heading li{
+    padding: 2px 20px;
+    border-radius: 4px;
+    margin: 0px 3px;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.new-p-heading li.active{
+    background-color: #f382c4;
+}
+
+.new-product-box{
+    max-width: 250px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+}
+
+.new-product-img{
+    width: 90%;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    margin: auto;
+}
+.new-product-img img{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    object-position: center;
+}
+.new-product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4pc 10px;
+    gap: 30px;
+
+}
+.new-product-text span{
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+.new-product-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 200px;
+    width: 100%;
+}
+.new-product{
+    width: 200%;
+}
+footer{
+    width: 100%;
+    border-top: 1px solid #f382c4;
+}
+.footer-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-company-box{
+    max-width: 330px
+}
+.footer-company-box .footer-logo{
+    font-size: 1.8rem;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.footer-company-box p{
+    color: #000000;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin: 5px 0px;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-social a{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f59d45;
+    color: #333;
+    font-size: 0.9rem;
+}
+.footer-bottom{
+    display: flex;
+    padding: 15px 40px;
+    background: #f5f5f5;
+}
+
+.copyright{
+    margin-left: auto;
+}
+
+
+/* Mobiili: navigaatio riville alas */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+}
+/* Responsive footer*/
+@media (max-width:1100px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px
+    }
+    .new-product-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
